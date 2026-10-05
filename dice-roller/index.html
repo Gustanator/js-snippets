@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>ROLL A DICE!</h1>
+        <label>Pick a dice size:
+            <select id="selector">
+                <option value="2">2 sides (Coin)</option>
+                <option value="4">4 sides</option>
+                <option value="6">6 sides</option>
+                <option value="8">8 sides</option>
+                <option value="10">10 sides</option>
+                <option value="12">12 sides</option>
+                <option value="20">20 sides</option>
+            </select>
+
+            <button id="roll" onclick="rollDice()">Roll!</button>
+        </label> <br>
+        <p><!-- Sorted number: <b>${sortedNumber}</b>! --></p>
+    </div>
+
+    <script src="dice.js"></script>
+</body>
+
+</html>

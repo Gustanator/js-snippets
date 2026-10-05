@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+
+    font-family: "Comic Relief", system-ui;
+    font-size: 3vh;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+}
+
+.container {
+    height: 40vh;
+    width: 30vw;
+    margin: auto;
+    display: block;
+    text-align: center;
+
+    border: 2px solid greenyellow;
+}
+
+h1 {
+    font-size: 5vh;
+    font-weight: 700;
+    margin: 10px 0 20px 0;
+}
+
+#selector {
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    outline: none;
+
+    padding: 3px;
+    cursor: pointer;
+}
+
+#roll {
+    border: 2px solid aliceblue;
+    border-radius: 5px;
+    outline: none;
+
+    padding: 3px;
+    cursor: pointer;
+}
+
+#roll:hover {
+    opacity: 0.8;
+}
+
+p {
+    margin-top: 20px;
+}
+
+b {
+    color: greenyellow;
+}
