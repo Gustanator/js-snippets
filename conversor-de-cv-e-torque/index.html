@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Conversor de cv e torque</title>
+</head>
+
+<body>
+    <h1>Conversor de unidades de medida em motores</h1>
+    <div class="potencia">
+        <h2>Potência</h2>
+        <label>
+            Converter de...
+            <select id="converter-pot-de">
+                <option value="cv">Cavalo-Vapor (cv)</option>
+                <option value="hp">Horse-Power (hp)</option>
+                <option value="kw">Kilo-Watt (w)</option>
+            </select>
+        </label>
+        <input type="number" placeholder="valor" id="valor-pot">
+        <label>
+            ...para...
+            <select id="converter-pot-para">
+                <option value="cv">Cavalo-Vapor (cv)</option>
+                <option value="hp">Horse-Power (hp)</option>
+                <option value="kw">Kilo-Watt (w)</option>
+            </select>
+        </label>
+        <br>
+        <button onclick="converter('potencia')">Converter</button>
+    </div>
+    <div class="torque">
+        <h2>Torque</h2>
+        <label>
+            Converter de...
+            <select id="converter-torq-de">
+                <option value="kgfm">Quilograma-Força-Metro (kgfm)</option>
+                <option value="lbft">Libra-pé (lbft)</option>
+                <option value="nm">Newton-metro (nm)</option>
+            </select>
+        </label>
+        <input type="number" placeholder="valor" id="valor-torq">
+        <label>
+            ...para...
+            <select id="converter-torq-para">
+                <option value="kgfm">Quilograma-Força-Metro (kgfm)</option>
+                <option value="lbft">Libra-pé (lbft)</option>
+                <option value="nm">Newton-metro (nm)</option>
+            </select>
+        </label>
+        <br>
+        <button id="conv-torq" onclick="converter('torque')">Converter</button>
+    </div>
+
+    <div class="resultado">
+        <p id="resultado"></p>
+    </div>
+</body>
+<script src="./conversor.js"></script>
+
+</html>
